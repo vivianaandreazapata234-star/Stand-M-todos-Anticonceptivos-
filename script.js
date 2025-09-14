@@ -1,3 +1,5 @@
-function invitar() {
-    alert("🎉 ¡Gracias por tu interés! Te esperamos en el stand 💙");
-}
+document.getElementById('infoBtn').addEventListener('click', function(){
+  alert('En el stand te daremos la información que quieras y hasta más. ¡Visítanos! 🎉');
+});
+
+
