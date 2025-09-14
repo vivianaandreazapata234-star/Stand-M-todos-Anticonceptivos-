@@ -1,55 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Métodos Anticonceptivos</title>
-    <link rel="stylesheet" href="estilos.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Métodos anticonceptivos — Stand informativo</title>
+  <style>
+    :root{
+      --red:#e31b23;
+      --dark-red:#b01518;
+      --white:#ffffff;
+      --muted:#4b5563;
+    }
+    html,body{
+      height:100%;
+      margin:0;
+      font-family:Inter, system-ui, -apple-system,'Segoe UI',Roboto,Arial;
+      color:var(--muted);
+      background:linear-gradient(135deg,var(--red) 0%,#ff6b6b 40%,var(--dark-red) 100%);
+    }
+    .wrap{
+      max-width:1080px;
+      margin:36px auto;
+      padding:28px;
+    }
+    .card{
+      background:var(--white);
+      border-radius:20px;
+      padding:28px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.18);
+      border:3px solid var(--red);
+    }
+    h1{
+      margin:0 0 14px;
+      font-size:2rem;
+      color:var(--red);
+      text-align:center;
+    }
+    p.lead{
+      text-align:center;
+      margin:0 0 24px;
+      font-size:1.1rem;
+      color:#374151;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 320px;
+      gap:18px;
+    }
+    .section{
+      margin-bottom:18px;
+    }
+    .method{
+      padding:16px;
+      border-radius:14px;
+      border:2px solid #fee2e2;
+      background:#fff5f5;
+    }
+    .method h3{
+      margin:0 0 8px;
+      font-size:1.2rem;
+      color:var(--dark-red);
+    }
+    ul{
+      margin:0;
+      padding-left:18px;
+    }
+    li{
+      margin-bottom:6px;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:10px;
+    }
+    th,td{
+      padding:10px;
+      border-bottom:1px solid #fca5a5;
+      text-align:left;
+    }
+    th{
+      background:#fecaca;
+      color:var(--dark-red);
+    }
+    .btn{
+      padding:14px 22px;
+      border-radius:14px;
+      border:none;
+      cursor:pointer;
+      font-weight:800;
+      font-size:1.05rem;
+      background:var(--red);
+      color:var(--white);
+      box-shadow:0 6px 16px rgba(0,0,0,0.2);
+      display:block;
+      margin:24px auto 0;
+    }
+    .btn:hover{
+      background:var(--dark-red);
+    }
+    .event-info{
+      margin-top:28px;
+      padding:18px;
+      text-align:center;
+      background:#fff0f0;
+      border:2px dashed var(--red);
+      border-radius:16px;
+    }
+    .event-info h2{
+      margin:0 0 10px;
+      color:var(--dark-red);
+    }
+    .event-info p{
+      margin:4px 0;
+      font-weight:600;
+      color:#374151;
+    }
+    @media (max-width:880px){
+      .grid{grid-template-columns:1fr;}
+      .wrap{padding:16px}
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>🌸 Métodos Anticonceptivos</h1>
-        <p>Infórmate, cuídate y toma decisiones responsables 💙</p>
-    </header>
+  <div class="wrap">
+    <div class="card">
+      <h1>Métodos anticonceptivos ❤️🤍</h1>
+      <p class="lead">Conoce tus opciones — en nuestro stand encontrarás toda la información detallada y orientación personalizada.</p>
 
-    <section id="info">
-        <h2>¿Qué son?</h2>
-        <p>
-            Son herramientas y técnicas que ayudan a prevenir embarazos no planificados 
-            y a cuidar la salud sexual. Existen diferentes tipos: 
-            <strong>hormonales</strong>, <strong>de barrera</strong> y <strong>naturales</strong>.
-        </p>
-    </section>
+      <div class="grid">
+        <main>
+          <section class="section method">
+            <h3>1. Métodos hormonales 💊</h3>
+            <ul>
+              <li>Píldora anticonceptiva — toma diaria.</li>
+              <li>Inyectable — cada 1–3 meses.</li>
+              <li>Implante subdérmico — dura varios años.</li>
+              <li>Parche o anillo vaginal — liberan hormonas.</li>
+            </ul>
+            <p><strong>Pros:</strong> Alta eficacia, regulan el ciclo. <br><strong>Contras:</strong> No protegen contra ETS, posibles efectos secundarios.</p>
+          </section>
 
-    <section id="tipos">
-        <h2>Ejemplos de métodos</h2>
-        <ul>
-            <li>✅ Condón masculino y femenino</li>
-            <li>✅ Pastillas anticonceptivas</li>
-            <li>✅ Inyecciones</li>
-            <li>✅ Implantes y dispositivos intrauterinos (DIU)</li>
-            <li>✅ Métodos de emergencia</li>
-        </ul>
-    </section>
+          <section class="section method">
+            <h3>2. Dispositivos intrauterinos (DIU) 🧲</h3>
+            <ul>
+              <li>DIU de cobre — hasta 10 años.</li>
+              <li>DIU hormonal — 3 a 7 años.</li>
+            </ul>
+            <p><strong>Pros:</strong> Muy eficaces, reversibles. <br><strong>Contras:</strong> Colocación médica, posible sangrado irregular.</p>
+          </section>
 
-    <section id="stand">
-        <h2>¡Visita nuestro stand!</h2>
-        <p>En nuestro stand podrás:</p>
-        <ul>
-            <li>📘 Recibir información clara y confiable</li>
-            <li>💬 Resolver tus dudas con estudiantes, que se informaron sobre el tema</li>
-            <li>🎁 Llevarte material educativo y sorpresas</li>
-        </ul>
+          <section class="section method">
+            <h3>3. Métodos de barrera 🛡️</h3>
+            <ul>
+              <li>Condón masculino y femenino — protegen contra ETS.</li>
+              <li>Diafragma / Capuchón cervical.</li>
+            </ul>
+            <p><strong>Tips:</strong> Usar lubricantes adecuados, revisar caducidad, no reutilizar.</p>
+          </section>
 
-        <p><strong>📍 Lugar:</strong> cancha de la sede prinicipal</p>
-        <p><strong>🕒 Hora:</strong> por confirmar </p>
+          <section class="section method">
+            <h3>4. Anticoncepción de emergencia 🚨</h3>
+            <p>Píldora del día después o DIU colocado tras una relación sin protección. No es un método regular.</p>
+          </section>
 
-        <button onclick="invitar()">Quiero visitar el stand</button>
-    </section>
+          <section class="section method">
+            <h3>5. Métodos de consciencia fértil 🌿</h3>
+            <p>Basados en el seguimiento de ciclos, temperatura y moco cervical. Eficacia variable, no protegen contra ETS.</p>
+          </section>
 
-    <footer>
-        <p>✨ Cuidarte es amarte 💙 — Te esperamos ✨</p>
-    </footer>
+          <section class="section method">
+            <h3>6. Esterilización ✂️</h3>
+            <p>Vasectomía o ligadura de trompas. Alta eficacia, generalmente irreversible.</p>
+          </section>
+        </main>
 
-    <script src="script.js"></script>
+        <aside>
+          <div class="method">
+            <h3>Tabla rápida de eficacia 📊</h3>
+            <table>
+              <thead><tr><th>Método</th><th>Eficacia aprox.</th></tr></thead>
+              <tbody>
+                <tr><td>DIU / Implante</td><td>≈99%+</td></tr>
+                <tr><td>Píldora / Inyectable / Parche</td><td>91–99%</td></tr>
+                <tr><td>Condón</td><td>≈85%</td></tr>
+                <tr><td>Métodos naturales</td><td>76–88%</td></tr>
+                <tr><td>Esterilización</td><td>≈99%+</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </aside>
+      </div>
+
+      <div class="event-info">
+        <h2>📅 Evento y ubicación</h2>
+        <p><strong>Fecha:</strong> 07 de noviembre de 2025</p>
+        <p><strong>Lugar:</strong> Cancha de la sede principal Monseñor Ramon Arcila , Stand #03</p>
+        <p><strong>Hora:</strong> Por Confirmar </p>
+        <p>✨ ¡Acércate a nuestro stand y descubre más con asesoría personalizada!</p>
+      </div>
+
+      <button class="btn" id="infoBtn">Quiero más información 📖</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('infoBtn').addEventListener('click', function(){
+      alert('En el stand te daremos la información que quieras y hasta más. ¡Visítanos! 🎉');
+    });
+  </script>
 </body>
 </html>
